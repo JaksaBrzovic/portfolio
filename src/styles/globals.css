@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+:root {
+  /* Color */
+  --color-background: #f7f7f5;
+  --color-surface: #ffffff;
+  --color-text-primary: #171717;
+  --color-text-secondary: #5f6368;
+  --color-text-muted: #8a8d91;
+  --color-border: #e4e4e1;
+  --color-accent: #2563eb;
+
+  /* Hero (page-specific override, see DESIGN_SYSTEM.md §54 / UI_BLUEPRINT.md §5.2) */
+  --color-hero-background: #09090b;
+  --color-hero-text-primary: #f7f7f5;
+  --color-hero-text-secondary: #a1a1aa;
+  --color-hero-border: #27272a;
+
+  /* Spacing (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Motion */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Breakpoints (reference only — used via media queries below) */
+  --breakpoint-mobile: 640px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-wide: 1280px;
+
+  /* Container */
+  --container-max-width: 1280px;
+  --container-padding: 32px;
+
+  /* Content widths */
+  --width-reading: 720px;
+  --width-overview: 760px;
+  --width-hero-copy: 800px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --container-padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --container-padding: 24px;
+  }
+}
+
+@theme inline {
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-border: var(--color-border);
+  --color-accent: var(--color-accent);
+
+  --color-hero-background: var(--color-hero-background);
+  --color-hero-text-primary: var(--color-hero-text-primary);
+  --color-hero-text-secondary: var(--color-hero-text-secondary);
+  --color-hero-border: var(--color-hero-border);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+
+  --font-sans: var(--font-manrope);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+a,
+button {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Typography scale */
+
+.text-h1 {
+  font-size: 42px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.text-h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.text-h3 {
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.text-body-lg {
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.text-body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.text-metadata {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.text-eyebrow {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .text-h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+  }
+
+  .text-h2 {
+    font-size: 40px;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+  }
+
+  .text-h3 {
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+  }
+
+  .text-body-lg {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
