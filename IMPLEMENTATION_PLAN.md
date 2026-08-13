@@ -191,7 +191,6 @@ links
 cards
 interaction states
 responsive behavior
-cursor behavior
 animation principles
 
 Global CSS belongs in the project's global style layer.
@@ -225,77 +224,12 @@ Required shared elements:
 
 Navbar
 page container
-global cursor
 Footer
 global transition/interaction behavior where specified
 
 The shell must be shared across all routes.
 
 Do not duplicate Navbar/Footer markup in individual pages.
-
-10. Phase 5 — Cursor System
-
-Implement the custom cursor according to the cursor requirements defined in:
-
-DESIGN_SYSTEM.md
-UI_BLUEPRINT.md
-
-The cursor implementation must support the defined interaction states.
-
-At minimum, verify:
-
-normal state
-interactive/link state
-button state
-project/media interaction state where defined
-behavior when pointer leaves the viewport
-behavior over unsupported elements
-desktop-only behavior
-touch-device behavior
-
-The cursor must not interfere with interaction.
-
-It must never block clicks.
-
-The cursor element should normally use:
-
-pointer-events: none
-
-unless a specific implementation requirement explicitly says otherwise.
-
-11. Cursor Performance
-
-The cursor must be implemented efficiently.
-
-Avoid:
-
-React state updates on every pointer movement
-unnecessary component rerenders
-expensive layout calculations
-excessive DOM manipulation
-
-Prefer:
-
-requestAnimationFrame
-transforms
-refs
-CSS transitions
-GPU-friendly properties
-
-The cursor should not create visible performance problems on the portfolio itself.
-
-12. Cursor Accessibility
-
-The custom cursor must not be the only indication of interactivity.
-
-Links and buttons must retain:
-
-visible hover state
-focus state
-semantic HTML
-keyboard accessibility
-
-Users who cannot use the custom cursor must still be able to navigate normally.
 
 13. Reduced Motion
 
@@ -306,7 +240,6 @@ prefers-reduced-motion
 When reduced motion is requested:
 
 disable or significantly reduce decorative animations
-avoid unnecessary cursor animation
 avoid large transition effects
 preserve usability
 
@@ -866,25 +799,10 @@ project hero
 galleries
 videos
 buttons
-cursor behavior
 spacing
 overflow
 
 No horizontal page scrolling should occur unless explicitly intended.
-
-44. Touch Devices
-
-The custom desktop cursor must not be used as the primary interaction mechanism on touch devices.
-
-Touch devices should use normal:
-
-tap
-swipe
-scroll
-
-interaction.
-
-Do not display a fake cursor on mobile unless explicitly required.
 
 45. Phase 16 — Animation
 
@@ -1015,7 +933,6 @@ alt text
 accessible navigation
 accessible mobile menu
 reduced motion support
-no cursor-dependent functionality
 55. Heading Hierarchy
 
 Maintain logical heading hierarchy.
@@ -1043,7 +960,6 @@ optimized video
 lazy loading
 minimal JavaScript
 reusable components
-efficient cursor implementation
 limited animation
 avoiding unnecessary third-party dependencies
 58. Client Components
@@ -1052,7 +968,6 @@ Use client-side components only when necessary.
 
 Examples that may require client-side behavior:
 
-custom cursor
 interactive navigation
 animation state
 media interaction
@@ -1253,7 +1168,6 @@ Verify all major components at multiple viewport sizes.
 
 Particular attention should be paid to:
 
-custom cursor
 navbar
 hero typography
 project grids
@@ -1288,7 +1202,6 @@ unnecessarily large images
 unnecessarily large videos
 excessive JavaScript
 animation jank
-cursor jank
 layout shifts
 slow initial rendering
 unnecessary client-side rendering
@@ -1308,7 +1221,6 @@ hierarchy
 colors
 interaction states
 animation
-cursor
 responsive layout
 component consistency
 
@@ -1448,41 +1360,39 @@ The recommended implementation sequence is:
         ↓
 4. Build application shell
         ↓
-5. Build cursor system
+5. Build reusable UI primitives
         ↓
-6. Build reusable UI primitives
+6. Build project data layer
         ↓
-7. Build project data layer
+7. Build homepage
         ↓
-8. Build homepage
+8. Build Projects page
         ↓
-9. Build Projects page
+9. Build dynamic Project page
         ↓
-10. Build dynamic Project page
+10. Add all 14 project entries
         ↓
-11. Add all 14 project entries
+11. Add media system
         ↓
-12. Add media system
+12. Build About page
         ↓
-13. Build About page
+13. Build Contact page
         ↓
-14. Build Contact page
+14. Implement responsive behavior
         ↓
-15. Implement responsive behavior
+15. Implement animations/interactions
         ↓
-16. Implement animations/interactions
+16. Implement SEO
         ↓
-17. Implement SEO
+17. Accessibility pass
         ↓
-18. Accessibility pass
+18. Performance pass
         ↓
-19. Performance pass
+19. Testing
         ↓
-20. Testing
+20. Visual QA
         ↓
-21. Visual QA
-        ↓
-22. Final cleanup
+21. Final cleanup
 
 Do not attempt to implement everything in one step.
 
@@ -1556,7 +1466,6 @@ Design
  Design system is implemented
  UI blueprint is implemented
  Responsive behavior is correct
- Cursor behavior is correct
  Animations are implemented appropriately
 Pages
  Homepage
@@ -1582,7 +1491,6 @@ Accessibility
  Semantic markup
  Alt text
  Reduced motion
- Cursor does not affect usability
 Technical
  TypeScript passes
  Lint passes
@@ -1622,7 +1530,7 @@ Data-driven projects
         ↓
 14 project case studies
         ↓
-Interactions + cursor + animation
+Interactions + animation
         ↓
 Responsive + accessibility
         ↓
