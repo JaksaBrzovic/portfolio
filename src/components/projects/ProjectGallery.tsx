@@ -14,7 +14,7 @@ export function ProjectGallery({ images, title }: { images: string[]; title: str
           <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg">
             <Image
               src={first}
-              alt={`${title} — gallery image`}
+              alt={`${title} — 1`}
               fill
               sizes="100vw"
               className="object-cover"
@@ -22,11 +22,11 @@ export function ProjectGallery({ images, title }: { images: string[]; title: str
           </div>
           {rest.length > 0 ? (
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6">
-              {rest.map((image) => (
+              {rest.map((image, index) => (
                 <div key={image} className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
                   <Image
                     src={image}
-                    alt={`${title} — gallery image`}
+                    alt={`${title} — ${index + 2}`}
                     fill
                     sizes="(min-width: 640px) 50vw, 100vw"
                     className="object-cover"

@@ -5,10 +5,7 @@ import { ProjectMeta } from "@/components/projects/ProjectMeta";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <NextLink
-      href={`/projects/${project.slug}`}
-      className="group block focus-visible:outline-none"
-    >
+    <NextLink href={`/projects/${project.slug}`} className="group block">
       <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg bg-surface">
         {project.media.cover ? (
           <Image

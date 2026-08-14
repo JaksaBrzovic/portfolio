@@ -24,7 +24,7 @@ export function ProjectVideo({
               className="aspect-video w-full rounded-lg bg-surface"
               aria-label={`${title} — video`}
             >
-              <source src={video} />
+              <source src={video} type="video/mp4" />
             </video>
           ))}
         </div>

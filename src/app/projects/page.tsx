@@ -4,14 +4,24 @@ import { siteConfig } from "@/data/site";
 import { Section } from "@/components/ui/Section";
 import { ProjectGrid } from "@/components/projects/ProjectGrid";
 
+const description =
+  "A complete collection of games, mobile applications, AR, VR and interactive installations built by Jakša Brzović.";
+
 export const metadata: Metadata = {
   title: "Projects",
-  description:
-    "A complete collection of games, mobile applications, AR, VR and interactive installations built by Jakša Brzović.",
+  description,
+  alternates: {
+    canonical: "/projects",
+  },
   openGraph: {
+    url: "/projects",
     title: `Projects — ${siteConfig.name}`,
-    description:
-      "A complete collection of games, mobile applications, AR, VR and interactive installations built by Jakša Brzović.",
+    description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Projects — ${siteConfig.name}`,
+    description,
   },
 };
 

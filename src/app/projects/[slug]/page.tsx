@@ -33,20 +33,26 @@ export async function generateMetadata({
   if (!project) return {};
 
   const description = project.overview[0];
+  const images = project.media.cover ? [project.media.cover] : undefined;
 
   return {
     title: project.title,
     description,
+    alternates: {
+      canonical: `/projects/${project.slug}`,
+    },
     openGraph: {
+      type: "article",
+      url: `/projects/${project.slug}`,
       title: `${project.title} — ${siteConfig.name}`,
       description,
-      images: project.media.cover ? [project.media.cover] : undefined,
+      images,
     },
     twitter: {
       card: "summary_large_image",
       title: `${project.title} — ${siteConfig.name}`,
       description,
-      images: project.media.cover ? [project.media.cover] : undefined,
+      images,
     },
   };
 }

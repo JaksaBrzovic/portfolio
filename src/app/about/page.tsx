@@ -7,14 +7,24 @@ import { publicPathExists } from "@/lib/media";
 
 const PORTRAIT_PATH = "/media/site/profile.webp";
 
+const description =
+  "Unity developer with around 10 years of professional experience developing games, applications and interactive experiences.";
+
 export const metadata: Metadata = {
   title: "About",
-  description:
-    "Unity developer with around 10 years of professional experience developing games, applications and interactive experiences.",
+  description,
+  alternates: {
+    canonical: "/about",
+  },
   openGraph: {
+    url: "/about",
     title: `About — ${siteConfig.name}`,
-    description:
-      "Unity developer with around 10 years of professional experience developing games, applications and interactive experiences.",
+    description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `About — ${siteConfig.name}`,
+    description,
   },
 };
 

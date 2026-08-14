@@ -4,13 +4,24 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Link } from "@/components/ui/Link";
 
+const description =
+  "For Unity development, technical support, project work or collaboration, get in touch directly.";
+
 export const metadata: Metadata = {
   title: "Contact",
-  description: "For Unity development, technical support, project work or collaboration, get in touch directly.",
+  description,
+  alternates: {
+    canonical: "/contact",
+  },
   openGraph: {
+    url: "/contact",
     title: `Contact — ${siteConfig.name}`,
-    description:
-      "For Unity development, technical support, project work or collaboration, get in touch directly.",
+    description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Contact — ${siteConfig.name}`,
+    description,
   },
 };
 
