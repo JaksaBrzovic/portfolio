@@ -18,11 +18,7 @@ export function Hero() {
             <Button href="/projects" variant="primary">
               View Projects
             </Button>
-            <Button
-              href="/contact"
-              variant="secondary"
-              className="border-hero-border bg-transparent text-hero-text-primary hover:border-hero-text-secondary"
-            >
+            <Button href="/contact" variant="secondaryInverse">
               Contact Me
             </Button>
           </div>

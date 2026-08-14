@@ -123,9 +123,18 @@ body {
   color: #ffffff;
 }
 
-a,
-button {
-  color: inherit;
+/*
+ * Wrapped in Tailwind's `base` layer (not left unlayered) so that color
+ * utilities applied directly to an <a>/<button> — e.g. Button's
+ * `text-hero-text-primary` — win in the cascade. Unlayered CSS always beats
+ * layered utilities regardless of source order or specificity, which was
+ * silently forcing every button/link back to the inherited body text color.
+ */
+@layer base {
+  a,
+  button {
+    color: inherit;
+  }
 }
 
 :focus-visible {
@@ -175,18 +184,18 @@ button {
 }
 
 .text-eyebrow {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
   .text-h1 {
-    font-size: 64px;
-    line-height: 1.05;
-    letter-spacing: -0.035em;
+    font-size: 56px;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
   }
 
   .text-h2 {

@@ -3,7 +3,7 @@ import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "reac
 import { cn } from "@/lib/cn";
 import { isExternalHref } from "@/lib/links";
 
-type ButtonVariant = "primary" | "secondary" | "small";
+type ButtonVariant = "primary" | "secondary" | "secondaryInverse" | "small";
 
 interface CommonProps {
   variant?: ButtonVariant;
@@ -33,6 +33,12 @@ const variantStyles: Record<ButtonVariant, string> = {
     "h-12 px-5 rounded-md text-sm font-semibold bg-accent text-white hover:bg-accent/90 active:bg-accent/80",
   secondary:
     "h-12 px-5 rounded-md text-sm font-semibold bg-surface text-text-primary border border-border hover:border-text-secondary",
+  // For secondary buttons on the dark Hero background (--color-hero-*) — a
+  // dedicated variant instead of overriding `secondary` via className, since
+  // conflicting Tailwind utilities passed through cn() aren't guaranteed to
+  // win over the variant's own classes.
+  secondaryInverse:
+    "h-12 px-5 rounded-md text-sm font-semibold bg-transparent text-hero-text-primary border border-hero-border hover:border-hero-text-secondary",
   small: "h-10 px-4 rounded-[8px] text-sm font-semibold bg-accent text-white hover:bg-accent/90",
 };
 
