@@ -13,13 +13,13 @@ interface CommonProps {
 
 interface LinkButtonProps
   extends CommonProps,
-    Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "className"> {
+    Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "className" | "children"> {
   href: string;
 }
 
 interface NativeButtonProps
   extends CommonProps,
-    Omit<ButtonHTMLAttributes<HTMLButtonElement>, "className"> {
+    Omit<ButtonHTMLAttributes<HTMLButtonElement>, "className" | "children"> {
   href?: undefined;
 }
 

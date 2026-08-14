@@ -3,7 +3,8 @@ import type { AnchorHTMLAttributes, ReactNode } from "react";
 import { cn } from "@/lib/cn";
 import { isExternalHref } from "@/lib/links";
 
-interface LinkProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "className"> {
+interface LinkProps
+  extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "className" | "children"> {
   href: string;
   children: ReactNode;
   className?: string;
