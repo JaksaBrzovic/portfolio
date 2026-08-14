@@ -10,8 +10,8 @@ export interface SiteConfig {
 }
 
 /**
- * email / linkedin / github / cvUrl / toptalUrl / siteUrl are intentionally
- * left undefined — CONTENT_PLAN.md defers these to "final approved
+ * linkedin / github / cvUrl / toptalUrl / siteUrl are intentionally left
+ * undefined — CONTENT_PLAN.md defers these to "final approved
  * content/configuration" and explicitly forbids guessing them. Components
  * must only render a link when its destination is defined.
  */
@@ -19,7 +19,7 @@ export const siteConfig: SiteConfig = {
   name: "Jakša Brzović",
   role: "Unity Developer",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
-  email: undefined,
+  email: "jaksabrzovic@gmail.com",
   linkedin: undefined,
   github: undefined,
   cvUrl: undefined,
