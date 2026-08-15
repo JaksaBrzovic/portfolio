@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/data/site";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
+import { ToptalBadge } from "@/components/ui/ToptalBadge";
 import { publicPathExists } from "@/lib/media";
 
 const PORTRAIT_PATH = "/media/site/profile.webp";
@@ -53,14 +54,19 @@ export default function AboutPage() {
       >
         <div className={hasPortrait ? "grid grid-cols-1 gap-10 md:grid-cols-[320px_1fr] md:gap-16" : ""}>
           {hasPortrait ? (
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg">
-              <Image
-                src={PORTRAIT_PATH}
-                alt={siteConfig.name}
-                fill
-                sizes="320px"
-                className="object-cover"
-              />
+            <div>
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg">
+                <Image
+                  src={PORTRAIT_PATH}
+                  alt={siteConfig.name}
+                  fill
+                  sizes="320px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="mt-6 flex justify-center">
+                <ToptalBadge />
+              </div>
             </div>
           ) : null}
 
@@ -70,6 +76,11 @@ export default function AboutPage() {
                 {paragraph}
               </p>
             ))}
+            {!hasPortrait ? (
+              <div className="mt-4">
+                <ToptalBadge />
+              </div>
+            ) : null}
           </div>
         </div>
       </Section>

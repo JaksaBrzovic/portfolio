@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { ToptalBadge } from "@/components/ui/ToptalBadge";
 
 export function Hero() {
   return (
@@ -21,6 +22,10 @@ export function Hero() {
             <Button href="/contact" variant="secondaryInverse">
               Contact Me
             </Button>
+          </div>
+
+          <div className="mt-12 flex justify-center">
+            <ToptalBadge />
           </div>
         </div>
       </Container>
