@@ -31,12 +31,15 @@ export interface ProjectInput {
   featured: boolean;
   order: number;
   year?: string;
-  duration?: string;
   role: string;
   team?: string;
   platforms: string[];
   client?: string;
   location?: string;
+  /** Company employed for this project. Omit when `freelance` is true. */
+  company?: string;
+  /** Worked on this project as a freelancer rather than as an employee. */
+  freelance?: boolean;
   overview: string[];
   myRole: string[];
   keyContributions: KeyContribution[];

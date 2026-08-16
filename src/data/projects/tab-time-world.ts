@@ -9,6 +9,7 @@ export const tabTimeWorld: ProjectInput = {
   order: 5,
   year: "~2023",
   role: "Unity Developer / Unity Specialist",
+  company: "Delta Reality",
   platforms: ["iOS", "Android"],
   overview: [
     "Tab Time World was a commercial mobile application built around creative interactive activities.",

@@ -9,6 +9,7 @@ export const bearWithMe: ProjectInput = {
   order: 3,
   year: "2017–2019",
   role: "Unity Developer",
+  company: "Exordium Games",
   team: "2 programmers, 3 artists, writer/game designer, audio. The other programmer was the lead developer. My official role was Developer, but I worked independently across the game's systems.",
   platforms: ["PC"],
   overview: [

@@ -7,8 +7,9 @@ export const virtualTour360: ProjectInput = {
   category: "VR / Virtual Tour",
   featured: false,
   order: 11,
-  duration: "Approximately 1 week",
+  year: "2026",
   role: "Unity Developer",
+  freelance: true,
   platforms: ["PICO"],
   overview: [
     "A VR virtual-tour application where 360° images are retrieved from a backend and displayed inside a PICO headset.",

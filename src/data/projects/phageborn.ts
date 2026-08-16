@@ -9,6 +9,7 @@ export const phageborn: ProjectInput = {
   order: 4,
   year: "2020–2021",
   role: "Unity Developer",
+  company: "Games Revolted",
   team: "PC team included 2 frontend developers, 2 backend developers, sound, 4 artists, a project manager and a game designer. A separate mobile team existed. I worked on the PC scope.",
   platforms: ["PC"],
   overview: [

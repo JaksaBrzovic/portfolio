@@ -8,8 +8,8 @@ export const tondoJigsaw: ProjectInput = {
   featured: false,
   order: 8,
   year: "2025–2026",
-  duration: "Approximately 2 months of active development spread across a longer period",
   role: "Unity Developer",
+  freelance: true,
   platforms: ["iOS", "Android"],
   overview: [
     "Tondo Jigsaw was an older mobile application that had previously been released but no longer worked correctly on modern mobile devices.",

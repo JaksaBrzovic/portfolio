@@ -7,8 +7,9 @@ export const promotionalQrOcrApp: ProjectInput = {
   category: "Mobile / Computer Vision",
   featured: false,
   order: 12,
-  duration: "Approximately 1.5 months full-time",
+  year: "2024",
   role: "Unity Developer",
+  freelance: true,
   platforms: ["iOS", "Android"],
   overview: [
     "A promotional mobile application built for a marketing campaign where users scanned receipts containing high-density QR codes and entered their phone number to participate in a prize program.",

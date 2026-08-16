@@ -7,7 +7,9 @@ export const becarac: ProjectInput = {
   category: "Interactive Museum Installation / Computer Vision",
   featured: false,
   order: 14,
+  year: "2022",
   role: "Unity Developer",
+  company: "Delta Reality",
   platforms: ["Microsoft Azure Kinect"],
   location: "Museum of Bećarluk, Pleternica",
   overview: [

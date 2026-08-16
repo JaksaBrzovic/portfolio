@@ -7,8 +7,9 @@ export const kellsConvergent: ProjectInput = {
   category: "Interactive Book / Proof of Concept",
   featured: false,
   order: 7,
-  duration: "Several weeks",
+  year: "2026",
   role: "Unity Developer",
+  freelance: true,
   platforms: [],
   client: "Steve Halloway",
   overview: [

@@ -7,8 +7,9 @@ export const educationalGamesFramework: ProjectInput = {
   category: "Educational Games / Framework",
   featured: true,
   order: 2,
-  duration: "Approximately 1.5 months",
+  year: "2018",
   role: "Unity Developer / Framework Developer",
+  company: "Exordium Games",
   team: "5 developers total: Jakša and 4 junior developers. Each developer created approximately two games.",
   platforms: ["WebGL"],
   overview: [

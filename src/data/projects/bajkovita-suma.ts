@@ -7,7 +7,9 @@ export const bajkovitaSuma: ProjectInput = {
   category: "AR / Interactive Experience",
   featured: false,
   order: 9,
+  year: "2021",
   role: "Unity Developer",
+  company: "Delta Reality",
   platforms: ["iPad"],
   overview: [
     "Bajkovita Šuma is an AR experience where users explore a physical environment and discover virtual characters by scanning physical QR markers.",

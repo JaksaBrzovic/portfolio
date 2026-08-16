@@ -7,7 +7,9 @@ export const vrTrainingVirtualAcademy: ProjectInput = {
   category: "VR / Training",
   featured: false,
   order: 10,
+  year: "2020",
   role: "Unity Developer",
+  company: "Delta Reality",
   platforms: ["HTC Vive"],
   overview: [
     "A pair of VR training scenarios developed within an existing VR training framework.",

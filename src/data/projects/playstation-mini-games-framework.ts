@@ -7,7 +7,9 @@ export const playstationMiniGamesFramework: ProjectInput = {
   category: "Games / Framework",
   featured: true,
   order: 1,
+  year: "2024–2026",
   role: "Unity Developer / Framework Developer",
+  freelance: true,
   platforms: ["PC", "PlayStation"],
   overview: [
     "A reusable Unity framework developed to support the production of a large number of small games and game variations.",
