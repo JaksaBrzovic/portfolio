@@ -15,6 +15,11 @@ export interface TechnicalHighlight {
   technologies?: string[];
 }
 
+export interface ExternalResource {
+  label: string;
+  url: string;
+}
+
 export interface ProjectMedia {
   cover?: string;
   hero?: string;
@@ -49,6 +54,7 @@ export interface ProjectInput {
   results: string[];
   /** YouTube watch URLs for the project detail page. Distinct from `ProjectMedia.videos` (local mp4 files resolved from disk). */
   youtubeVideos?: string[];
+  externalResources?: ExternalResource[];
 }
 
 /** ProjectInput plus media resolved from the filesystem at build time. */

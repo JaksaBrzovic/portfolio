@@ -61,4 +61,5 @@ export const ribar: ProjectInput = {
     "Delivered the application in approximately 1.5 months with a very small team.",
   ],
   youtubeVideos: ["https://www.youtube.com/watch?v=4nbraBQltKc"],
+  externalResources: [{ label: "RibAR", url: "https://liznjaninfo.hr/index.php/ribar" }],
 };

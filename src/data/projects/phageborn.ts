@@ -86,4 +86,10 @@ export const phageborn: ProjectInput = {
     "Mentored a junior developer.",
   ],
   youtubeVideos: ["https://www.youtube.com/watch?v=GIJx20r1A2E"],
+  externalResources: [
+    {
+      label: "Steam",
+      url: "https://store.steampowered.com/app/1037990/PHAGEBORN_Online_Card_Game/",
+    },
+  ],
 };

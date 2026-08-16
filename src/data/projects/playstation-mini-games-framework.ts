@@ -105,4 +105,10 @@ export const playstationMiniGamesFramework: ProjectInput = {
     "Editor tooling automated repetitive development workflows.",
     "All games were shipped/released.",
   ],
+  externalResources: [
+    {
+      label: "Auto Slavic",
+      url: "https://psdeals.net/us-store/all-games?publisher=AUTO+SLAVIC+d.o.o.",
+    },
+  ],
 };

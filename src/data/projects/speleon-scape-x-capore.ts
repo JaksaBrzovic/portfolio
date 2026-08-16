@@ -63,4 +63,7 @@ export const speleonScapeXCapore: ProjectInput = {
     "The installation was deployed at SPELEON and is known to remain in the museum.",
   ],
   youtubeVideos: ["https://www.youtube.com/watch?v=FqjFfPXLdVA"],
+  externalResources: [
+    { label: "Official Website", url: "https://baraceve-spilje.hr/posjeti-speleon/" },
+  ],
 };

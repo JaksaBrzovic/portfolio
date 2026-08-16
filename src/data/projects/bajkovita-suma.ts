@@ -45,4 +45,5 @@ export const bajkovitaSuma: ProjectInput = {
     "Supported parallel development between AR and mini-game work.",
   ],
   youtubeVideos: ["https://www.youtube.com/watch?v=4zdQx_XH_Bk"],
+  externalResources: [{ label: "Official Website", url: "https://www.bajkovita-suma.eu" }],
 };

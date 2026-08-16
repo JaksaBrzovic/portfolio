@@ -66,4 +66,7 @@ export const tabTimeWorld: ProjectInput = {
     "Provided Unity expertise during the later stage of the project.",
   ],
   youtubeVideos: ["https://www.youtube.com/watch?v=XAgK49AjqpQ&t=8s"],
+  externalResources: [
+    { label: "App Store", url: "https://apps.apple.com/us/app/tab-time-world/id6448401335" },
+  ],
 };

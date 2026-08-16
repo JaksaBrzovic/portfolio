@@ -57,4 +57,22 @@ export const bearWithMe: ProjectInput = {
     "Produced technical writing based on production experience.",
   ],
   youtubeVideos: ["https://www.youtube.com/watch?v=McDG2S4KgmE"],
+  externalResources: [
+    {
+      label: "Steam",
+      url: "https://store.steampowered.com/app/1050000/Bear_With_Me_The_Lost_Robots/",
+    },
+    {
+      label: "Article — Adventure Creator Tips & Tricks",
+      url: "https://exordiumgames.com/adventure-creator-tips-tricks/",
+    },
+    {
+      label: "Article — Action List Optimization",
+      url: "https://exordiumgames.com/adventure-creator-tips-tricks-action-list-optimization/",
+    },
+    {
+      label: "Article — Adventure Creator Tips & Tricks Part 3",
+      url: "https://exordiumgames.com/adventure-creator-tips-tricks-part-3/",
+    },
+  ],
 };
