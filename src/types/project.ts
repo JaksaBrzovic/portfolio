@@ -47,6 +47,8 @@ export interface ProjectInput {
   challenges: ChallengeSolution[];
   technicalHighlights?: TechnicalHighlight[];
   results: string[];
+  /** YouTube watch URLs for the project detail page. Distinct from `ProjectMedia.videos` (local mp4 files resolved from disk). */
+  youtubeVideos?: string[];
 }
 
 /** ProjectInput plus media resolved from the filesystem at build time. */

@@ -95,4 +95,5 @@ export const educationalGamesFramework: ProjectInput = {
     "6 games received early-delivery bonuses.",
     "The framework allowed different developers to implement different games while maintaining consistency in required shared systems.",
   ],
+  youtubeVideos: ["https://www.youtube.com/watch?v=jC7AupXVmbM"],
 };

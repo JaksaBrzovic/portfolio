@@ -85,4 +85,5 @@ export const phageborn: ProjectInput = {
     "Built a reusable audio system.",
     "Mentored a junior developer.",
   ],
+  youtubeVideos: ["https://www.youtube.com/watch?v=GIJx20r1A2E"],
 };

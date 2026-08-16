@@ -60,4 +60,5 @@ export const ribar: ProjectInput = {
     "Achieved approximately 10-meter GPS accuracy.",
     "Delivered the application in approximately 1.5 months with a very small team.",
   ],
+  youtubeVideos: ["https://www.youtube.com/watch?v=4nbraBQltKc"],
 };

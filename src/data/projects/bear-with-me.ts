@@ -56,4 +56,5 @@ export const bearWithMe: ProjectInput = {
     "Solved backward compatibility for legacy save files after an Adventure Creator upgrade.",
     "Produced technical writing based on production experience.",
   ],
+  youtubeVideos: ["https://www.youtube.com/watch?v=McDG2S4KgmE"],
 };

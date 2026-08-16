@@ -14,6 +14,7 @@ import { TechnologyList } from "@/components/projects/TechnologyList";
 import { ChallengeSolutionList } from "@/components/projects/ChallengeSolutionList";
 import { TechnicalHighlights } from "@/components/projects/TechnicalHighlights";
 import { ResultsImpact } from "@/components/projects/ResultsImpact";
+import { ProjectYouTubeVideos } from "@/components/projects/ProjectYouTubeVideos";
 import { ProjectGallery } from "@/components/projects/ProjectGallery";
 import { ProjectVideo } from "@/components/projects/ProjectVideo";
 import { ProjectNavigation } from "@/components/projects/ProjectNavigation";
@@ -111,6 +112,8 @@ export default async function ProjectDetailPage({
       <ProjectSection title="Results / Impact">
         <ResultsImpact results={project.results} />
       </ProjectSection>
+
+      <ProjectYouTubeVideos videos={project.youtubeVideos ?? []} title={project.title} />
 
       <ProjectGallery images={project.media.gallery} title={project.title} />
       <ProjectVideo

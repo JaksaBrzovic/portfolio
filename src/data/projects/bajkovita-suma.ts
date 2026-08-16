@@ -44,4 +44,5 @@ export const bajkovitaSuma: ProjectInput = {
     "Enabled QR-triggered AR experiences.",
     "Supported parallel development between AR and mini-game work.",
   ],
+  youtubeVideos: ["https://www.youtube.com/watch?v=4zdQx_XH_Bk"],
 };

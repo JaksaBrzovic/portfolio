@@ -62,4 +62,5 @@ export const speleonScapeXCapore: ProjectInput = {
     "Successfully installed as a museum exhibit.",
     "The installation was deployed at SPELEON and is known to remain in the museum.",
   ],
+  youtubeVideos: ["https://www.youtube.com/watch?v=FqjFfPXLdVA"],
 };
