@@ -10,7 +10,6 @@ export function Footer() {
   const professionalLinks = [
     siteConfig.github ? { label: "GitHub", href: siteConfig.github } : null,
     siteConfig.linkedin ? { label: "LinkedIn", href: siteConfig.linkedin } : null,
-    siteConfig.email ? { label: "Email", href: `mailto:${siteConfig.email}` } : null,
   ].filter((link): link is { label: string; href: string } => link !== null);
 
   return (

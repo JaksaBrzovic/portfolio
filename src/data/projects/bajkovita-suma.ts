@@ -3,10 +3,10 @@ import type { ProjectInput } from "@/types/project";
 export const bajkovitaSuma: ProjectInput = {
   id: "bajkovita-suma",
   slug: "bajkovita-suma",
-  title: "Bajkovita Šuma",
+  title: "Fairytale forest",
   category: "AR / Interactive Experience",
   featured: false,
-  order: 9,
+  order: 7,
   year: "2021",
   role: "Unity Developer",
   company: "Delta Reality",

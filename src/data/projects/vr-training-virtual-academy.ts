@@ -3,10 +3,10 @@ import type { ProjectInput } from "@/types/project";
 export const vrTrainingVirtualAcademy: ProjectInput = {
   id: "vr-training-virtual-academy",
   slug: "vr-training-virtual-academy",
-  title: "VR Training / Virtual Academy",
+  title: "VR training",
   category: "VR / Training",
   featured: false,
-  order: 10,
+  order: 8,
   year: "2020",
   role: "Unity Developer",
   company: "Delta Reality",

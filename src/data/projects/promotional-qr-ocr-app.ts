@@ -6,7 +6,7 @@ export const promotionalQrOcrApp: ProjectInput = {
   title: "Promotional QR/OCR Mobile App",
   category: "Mobile / Computer Vision",
   featured: false,
-  order: 12,
+  order: 10,
   year: "2024",
   role: "Unity Developer",
   freelance: true,

@@ -6,11 +6,11 @@ export const kellsConvergent: ProjectInput = {
   title: "Kells Convergent",
   category: "Interactive Book / Proof of Concept",
   featured: false,
-  order: 7,
+  order: 5,
   year: "2026",
   role: "Unity Developer",
   freelance: true,
-  platforms: [],
+  platforms: ["iOS"],
   client: "Steve Halloway",
   overview: [
     "Kells Convergent was a proof-of-concept interactive digital book combining narrative content with mini-games, video and interactive elements.",

@@ -3,10 +3,10 @@ import type { ProjectInput } from "@/types/project";
 export const speleonScapeXCapore: ProjectInput = {
   id: "speleon-scape-x-capore",
   slug: "speleon-scape-x-capore",
-  title: "SPELEON / Scape X & Capore",
+  title: "SPELEON (Barac caves)",
   category: "Interactive Museum Installation",
   featured: true,
-  order: 13,
+  order: 11,
   year: "2022",
   role: "Unity Developer",
   company: "Delta Reality",

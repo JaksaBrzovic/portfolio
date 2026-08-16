@@ -3,7 +3,7 @@ import type { ProjectInput } from "@/types/project";
 export const playstationMiniGamesFramework: ProjectInput = {
   id: "playstation-mini-games-framework",
   slug: "playstation-mini-games-framework",
-  title: "PlayStation Mini-Games Framework",
+  title: "Playstation Games Framework",
   category: "Games / Framework",
   featured: true,
   order: 1,

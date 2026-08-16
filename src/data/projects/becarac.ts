@@ -3,7 +3,7 @@ import type { ProjectInput } from "@/types/project";
 export const becarac: ProjectInput = {
   id: "becarac",
   slug: "becarac",
-  title: "Bećarac",
+  title: "Becarluk Course",
   category: "Interactive Museum Installation / Computer Vision",
   featured: false,
   order: 14,

@@ -6,7 +6,7 @@ export const virtualTour360: ProjectInput = {
   title: "360° VR Virtual Tour",
   category: "VR / Virtual Tour",
   featured: false,
-  order: 11,
+  order: 9,
   year: "2026",
   role: "Unity Developer",
   freelance: true,

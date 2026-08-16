@@ -6,7 +6,7 @@ export const educationalGamesFramework: ProjectInput = {
   title: "Educational Games Framework",
   category: "Educational Games / Framework",
   featured: true,
-  order: 2,
+  order: 12,
   year: "2018",
   role: "Unity Developer / Framework Developer",
   company: "Exordium Games",

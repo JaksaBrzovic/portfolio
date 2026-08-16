@@ -6,7 +6,7 @@ export const tondoJigsaw: ProjectInput = {
   title: "Tondo Jigsaw",
   category: "Legacy Project Modernization / Mobile Game",
   featured: false,
-  order: 8,
+  order: 6,
   year: "2025–2026",
   role: "Unity Developer",
   freelance: true,
