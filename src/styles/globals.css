@@ -137,10 +137,18 @@ body {
   }
 }
 
-:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 2px;
-  border-radius: var(--radius-sm);
+/*
+ * Layered for the same reason as the a/button rule above: unlayered CSS
+ * always wins over Tailwind utilities regardless of source order. Elements
+ * that need a different focus-ring shape (e.g. the circular Navbar home
+ * link) override this via a `focus-visible:rounded-*` utility.
+ */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
 }
 
 /* Typography scale */

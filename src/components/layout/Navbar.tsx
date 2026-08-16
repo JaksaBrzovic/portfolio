@@ -47,8 +47,8 @@ export function Navbar() {
         <div className="flex h-20 items-center justify-between">
           <NextLink
             href="/"
-            className="text-sm font-bold tracking-tight text-text-primary"
-            aria-label={`${siteConfig.name} — home`}
+            aria-label="Home"
+            className="flex h-[38px] w-[38px] items-center justify-center rounded-full border border-border text-sm font-bold tracking-tight text-text-primary transition-colors duration-150 hover:border-accent hover:text-accent focus-visible:rounded-full md:h-11 md:w-11"
           >
             JB
           </NextLink>
