@@ -30,10 +30,13 @@ export const metadata: Metadata = {
 };
 
 const bioParagraphs = [
-  "I'm a Unity developer with around 10 years of professional experience developing games, applications and interactive experiences.",
+  "I'm a Unity developer with over 10 years of professional experience developing games, applications and interactive experiences.",
   "Throughout my career I've worked across PC, console, mobile, AR, VR and specialized interactive installations.",
-  "My work has included gameplay programming, UI systems, input systems, multiplayer debugging, reusable frameworks, editor tooling, AR/VR development, legacy project modernization and technical problem solving.",
-  "I enjoy projects where I can take ownership of a system, understand how it works end-to-end and find a practical solution to a difficult technical problem.",
+  "My work has included gameplay programming, UI systems, input systems, multiplayer, reusable frameworks, editor tooling, AR/VR development, legacy project modernization and technical problem solving.",
+  "I've often taken ownership of systems, solving difficult technical problems, working with existing codebases, and building reusable tools and frameworks that make development faster and more reliable. I also enjoy building systems from scratch, as it allows me to establish a clean, maintainable, and efficient architecture from the very beginning.",
+  "My main focus is always to clearly understand the client's goals, which is why I value clear communication and actively strive for it. Once I have a clear understanding of the client's vision, I focus on implementing the solution as effectively as possible while keeping it as simple as possible.",
+  "I enjoy having the bigger picture in mind and making technical plans and estimates. I also believe in transparency throughout a project so I can always clearly explain what I have been working on, how much time it has taken, and why.",
+  "A happy client is what makes me happy. My main goal is always to deliver high-quality work as quickly as possible, and I challenge myself to do just that on every project.",
 ];
 
 const quickFacts = [

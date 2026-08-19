@@ -25,17 +25,17 @@ export function AboutPreview() {
 
         <div className="max-w-[720px]">
           <p className="text-body-lg text-text-secondary">
-            I&apos;m a Unity developer with around 10 years of professional experience working
-            across games, mobile applications, AR, VR and interactive installations.
+            I&apos;m a Unity developer with over 10 years of professional experience developing
+            games, applications and interactive experiences.
           </p>
           <p className="text-body mt-4 text-text-secondary">
-            I&apos;ve worked on projects ranging from commercial games and mobile applications to
-            museum installations, educational frameworks and specialized AR/VR experiences.
+            Throughout my career I&apos;ve worked across PC, console, mobile, AR, VR and
+            specialized interactive installations.
           </p>
           <p className="text-body mt-4 text-text-secondary">
-            My work has often involved taking ownership of systems, solving difficult technical
-            problems, working with existing codebases and building reusable tools and frameworks
-            that make development faster and more reliable.
+            My work has included gameplay programming, UI systems, input systems, multiplayer,
+            reusable frameworks, editor tooling, AR/VR development, legacy project modernization
+            and technical problem solving.
           </p>
           <Link href="/about" className="mt-6 inline-block font-medium">
             More About Me →
