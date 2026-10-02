@@ -33,6 +33,7 @@ const bioParagraphs = [
   "I'm a Unity developer with over 10 years of professional experience developing games, applications and interactive experiences.",
   "Throughout my career I've worked across PC, console, mobile, AR, VR and specialized interactive installations.",
   "My work has included gameplay programming, UI systems, input systems, multiplayer, reusable frameworks, editor tooling, AR/VR development, legacy project modernization and technical problem solving.",
+  "My approach is AI-first. I maintain high productivity and product quality by defining clear specifications, guidelines, and rules for AI, while reviewing and testing everything it produces.",
   "I've often taken ownership of systems, solving difficult technical problems, working with existing codebases, and building reusable tools and frameworks that make development faster and more reliable. I also enjoy building systems from scratch, as it allows me to establish a clean, maintainable, and efficient architecture from the very beginning.",
   "My main focus is always to clearly understand the client's goals, which is why I value clear communication and actively strive for it. Once I have a clear understanding of the client's vision, I focus on implementing the solution as effectively as possible while keeping it as simple as possible.",
   "I enjoy having the bigger picture in mind and making technical plans and estimates. I also believe in transparency throughout a project so I can always clearly explain what I have been working on, how much time it has taken, and why.",

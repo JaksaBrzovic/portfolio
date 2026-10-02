@@ -20,10 +20,11 @@ export function Hero() {
             className="mt-6 font-bold tracking-tight text-hero-text-primary"
             style={{ fontSize: "clamp(1.5rem, 0.88rem + 2.65vw, 3rem)", lineHeight: 1.15 }}
           >
-            Experienced Unity Developer building games, applications and interactive experiences.
+            Experienced AI-first Developer building games, applications and interactive
+            experiences.
           </h1>
           <p className="text-body-lg mt-6 text-hero-text-secondary">
-            Unity developer with 10 years of professional experience across games, mobile
+            Unity developer with over 10 years of professional experience across games, mobile
             applications, AR, VR and interactive installations.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

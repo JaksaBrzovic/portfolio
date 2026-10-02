@@ -37,6 +37,11 @@ export function AboutPreview() {
             reusable frameworks, editor tooling, AR/VR development, legacy project modernization
             and technical problem solving.
           </p>
+          <p className="text-body mt-4 text-text-secondary">
+            My approach is AI-first. I maintain high productivity and product quality by
+            defining clear specifications, guidelines, and rules for AI, while reviewing and
+            testing everything it produces.
+          </p>
           <Link href="/about" className="mt-6 inline-block font-medium">
             More About Me →
           </Link>
