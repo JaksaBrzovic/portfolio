@@ -20,7 +20,7 @@ export function Hero() {
             className="mt-6 font-bold tracking-tight text-hero-text-primary"
             style={{ fontSize: "clamp(1.5rem, 0.88rem + 2.65vw, 3rem)", lineHeight: 1.15 }}
           >
-            Experienced AI-first Developer building games, applications and interactive
+            Experienced Developer building games, applications and interactive
             experiences.
           </h1>
           <p className="text-body-lg mt-6 text-hero-text-secondary">
